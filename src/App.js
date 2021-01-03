@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import WelcomeSection from "./components/WelcomeSection";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import WhiteBox from "./components/WhiteBox";
+
+import "./App.css";
+
+export class App extends Component {
+  // homepage: "https://robertasliekis.github.io/",
+  render() {
+    return (
+      <div className="website-wrapper">
+        <WelcomeSection />
+        <WhiteBox />
+        <About />
+        <WhiteBox />
+
+        <Projects />
+        <WhiteBox />
+
+        <Contact />
+      </div>
+    );
+  }
 }
 
 export default App;
