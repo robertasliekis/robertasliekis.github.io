@@ -267,7 +267,6 @@ body {
 //About section start
 .about-section {
   @include colorGradient();
-
   .about-content {
     @include flexCenterColumn();
     align-items: flex-start;
@@ -666,16 +665,22 @@ body {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 450px) {
   :root {
     --global-margin: 2rem;
   }
 
-  // .button-round {
-  //   height: 3rem;
-  //   width: 3rem;
-  //   font-size: 1.5rem;
-  // }
+  .button-round {
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .button-wide {
+    padding: 0 1rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
 
   .wrapper {
     .container {
@@ -751,6 +756,18 @@ body {
           .project-image {
             height: 20rem;
             background-size: 200%;
+            .project-overlay {
+              .buttons {
+                .button1 {
+                  right: 2.5rem;
+                }
+                .button3 {
+                  left: 2.5rem;
+                  padding: 0;
+                  justify-content: center;
+                }
+              }
+            }
           }
           .project-image1 {
             background-position: center;
@@ -798,13 +815,13 @@ body {
 
   .contact-section {
     .contact-content {
-      padding-bottom: 0.5rem;
+      padding-bottom: 0;
       align-items: center;
-
       .message-section {
         justify-content: center;
         padding: 0.5rem;
         border-radius: 1.5rem;
+
         .label-name,
         .label-email {
           width: 100%;
@@ -819,19 +836,19 @@ body {
           height: 0;
         }
         .button-send {
-          margin-top: 0;
           margin-left: 0;
+          width: auto;
         }
       }
       .contact-bottom {
         @include flexCenterColumn();
-        margin-top: 1rem;
+        margin: 1rem 0;
         .author {
           order: 2;
         }
         .social-media-icons {
           order: 1;
-          margin-bottom: 1rem;
+          width: 12rem;
         }
       }
     }

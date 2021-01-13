@@ -184,6 +184,8 @@ export class Contact extends Component {
               className="alert-message"
               style={{
                 opacity: this.state.errorName || this.state.errorEmail || this.state.errorSubject || this.state.errorMessage ? 1 : 0,
+                display:
+                  this.state.errorName || this.state.errorEmail || this.state.errorSubject || this.state.errorMessage ? "flex" : "none",
                 height: this.state.errorName || this.state.errorEmail || this.state.errorSubject || this.state.errorMessage ? "auto" : 0
               }}
             >
@@ -268,9 +270,9 @@ export class Contact extends Component {
           </form>
 
           <div className="contact-bottom">
-            <p className="author">
+            {/* <p className="author">
               © 2020 <span>ROBERTAS LIEKIS</span>
-            </p>
+            </p> */}
             <div className="social-media-icons">
               <a className="button-round" href="https://github.com/robertasliekis" aria-label="github">
                 <FontAwesomeIcon icon={faGithub} className="icon" />

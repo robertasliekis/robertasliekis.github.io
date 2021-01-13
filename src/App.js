@@ -17,10 +17,8 @@ export class App extends Component {
         <WhiteBox />
         <About />
         <WhiteBox />
-
         <Projects />
         <WhiteBox />
-
         <Contact />
       </div>
     );

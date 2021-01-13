@@ -962,9 +962,19 @@ body {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 450px) {
   :root {
     --global-margin: 2rem;
+  }
+  .button-round {
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+  }
+  .button-wide {
+    padding: 0 1rem;
+    height: 3rem;
+    font-size: 1.3rem;
   }
   .wrapper .container {
     width: 100%;
@@ -1067,6 +1077,16 @@ body {
     height: 20rem;
     background-size: 200%;
   }
+  .projects-section .projects-content .projects .project .project-image .project-overlay .buttons .button1 {
+    right: 2.5rem;
+  }
+  .projects-section .projects-content .projects .project .project-image .project-overlay .buttons .button3 {
+    left: 2.5rem;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .projects-section .projects-content .projects .project .project-image1 {
     background-position: center;
   }
@@ -1103,7 +1123,7 @@ body {
             transform: translateY(-20rem);
   }
   .contact-section .contact-content {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1129,8 +1149,8 @@ body {
     height: 0;
   }
   .contact-section .contact-content .message-section .button-send {
-    margin-top: 0;
     margin-left: 0;
+    width: auto;
   }
   .contact-section .contact-content .contact-bottom {
     display: -webkit-box;
@@ -1146,7 +1166,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
   .contact-section .contact-content .contact-bottom .author {
     -webkit-box-ordinal-group: 3;
@@ -1157,7 +1177,7 @@ body {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-bottom: 1rem;
+    width: 12rem;
   }
 }
 
