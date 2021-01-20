@@ -90,6 +90,11 @@ body {
   background: linear-gradient(120deg, var(--global-color1) 0%, var(--global-color2) 100%);
 }
 
+html,
+body {
+  @include colorGradient();
+}
+
 .wrapper {
   @include flexCenterColumn();
   width: 100%;
@@ -283,7 +288,7 @@ body {
       .profile-picture {
         width: 15rem;
         height: 15rem;
-        background-image: url("./images/me.webp");
+        background-image: url("./images/me.jpg");
         background-position: center;
         background-size: cover;
         border-radius: 8rem;
